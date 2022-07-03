@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
+import AboutComponent from "./components/AboutComponent";
 import  { BrowserRouter, Routes, Route,Link } from "react-router-dom";
 
 export default function App() {
@@ -15,8 +16,9 @@ export default function App() {
     </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route  path="/about" element={<About />} />
-        <Route path="/about/:id" element={<About />} />
+        <Route  path="/about" element={<About />}>
+           <Route path=":id" element={< AboutComponent />} />
+        </Route>
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Error />} />
       </Routes>
