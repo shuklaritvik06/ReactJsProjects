@@ -1,1 +1,1 @@
-https://62c429c98041785958980c96--reliable-longma-56bd85.netlify.app/search
+https://reliable-longma-56bd85.netlify.app/search
