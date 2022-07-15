@@ -7,3 +7,4 @@ Learning and Projects using Reactjs :)
 - [x] Google Clone
 - [x] ContextApi+useReducer
 - [x] Weather App (PWA)
+- [x] Crypto Tracker
