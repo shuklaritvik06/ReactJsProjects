@@ -1,0 +1,83 @@
+.name{
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.coin-description,.name,.about-coin,.market_data{
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    margin:30px 10px;
+    border-radius: 5px;
+}
+
+.coin-image{
+    width: 10%;
+}
+
+.about-coin{
+    padding: 20px;
+    color: white;
+}
+
+.about-coin h2{
+    margin-bottom: 10px;
+}
+
+a{
+    color: white;
+}
+
+.rank{
+    background-color: #6900ff;
+    border: 1px solid #6900ff;
+    box-shadow: 0 0 8px #6900ff;
+    color: white;
+    border-radius: 5px;
+    padding: 3px;
+    max-width:fit-content;
+}
+
+.coin-description{
+    padding: 10px;
+}
+
+.coin-price{
+    display: flex;
+    margin-top: 10px;
+    color: white;
+}
+
+.coin-price .first{
+    display: flex;
+    align-items: center;
+}
+
+.first img,.coin-title{
+    margin-right: 10px;
+}
+
+.second{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.second p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+thead tr td{
+    width: 100px;
+    background-color: #333;
+}
+
+tbody tr td,thead tr td{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
