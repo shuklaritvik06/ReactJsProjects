@@ -12,23 +12,23 @@ export default function CoinItem() {
     });
   }, []);
   return (
-    <>
-      {coin.map((item) => {
+    <div>
+      {coin?.map((item) => {
         return (
           <div className="coin-row" key={item.id} onClick={()=>{
               navigate(`/details/${item.id}`);
           }}>
             <p>{item.market_cap_rank}</p>
             <div className="logo">
-              <img src={item.image} alt="" />
+              <img src={item?.image} alt="" />
             </div>
-            <p>$ {item.current_price}</p>
-            <p>{item.price_change_percentage_24h.toFixed(2)}%</p>
-            <p className="hide-mobile">${item.total_volume.toLocaleString()}</p>
-            <p className="hide-mobile">${item.market_cap.toLocaleString()}</p>
+            <p>$ {item?.current_price}</p>
+            <p>{item?.price_change_percentage_24h.toFixed(2)}%</p>
+            <p className="hide-mobile">${item?.total_volume.toLocaleString()}</p>
+            <p className="hide-mobile">${item?.market_cap.toLocaleString()}</p>
           </div>
         );
       })}
-    </>
+    </div>
   );
 }
