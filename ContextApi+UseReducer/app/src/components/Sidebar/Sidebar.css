@@ -1,0 +1,17 @@
+.filters{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    max-width: 300px;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.clearBtn{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.filters > span{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,36 @@
+.coin-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 12px #18191b;
+    margin: 10px 0;
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+.coin-row:hover{
+    transform: scale(1.05);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 20%;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .hide-mobile{
+        display: none;
+    }
+    .coin-row:hover{
+        transform: scale(1.02);
+    }
+}
