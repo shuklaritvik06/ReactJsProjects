@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family:"Roboto Slab", serif;
+  background-color: #020a1c;
+}
+
+.app {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.9px;
+  color: #d6c1a0;
+  width: fit-content;
+}
+
+.searchMovies {
+  width: 75%;
+  margin: 4rem 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1.75rem;
+  border-radius: 3rem;
+  box-shadow: 1px 1px 5px #7598a0, -1px -1px 5px #7598a0;
+  box-shadow: 1px 1px 5px #7598a0, -1px -1px 5px #7598a0;
+}
+
+.searchMovies input {
+  background: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #d6c1a0;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 3rem;
+}
+
+#search{
+  cursor: pointer;
+}
+
+
+.showButton{
+  background: #d6c1a0;
+  border: none;
+  border-radius:10px;
+  padding: 1rem;
+  color: #020a1c;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 1rem;
+  margin: 2rem 0;
+}
+
+
+.empty {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty h2 {
+  font-size: 1.25rem;
+  color: #f9d3b4;
+  font-family:"Roboto Slab", serif;
+}
+
+@media screen and (max-width: 1498px) {
+  .container{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media screen and (max-width: 1138px) {
+  .container{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media screen and (max-width: 754px) {
+  .container{
+    grid-template-columns: repeat(1,1fr);
+  }
+  h1{
+    font-size: 2rem;
+  }
+}
