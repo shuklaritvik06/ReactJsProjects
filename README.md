@@ -1,6 +1,6 @@
 # ReactJsProjects
 
-Learning and Projects using Reactjs :) 
+Learn and build Projects using Reactjs :) 
 
 - [x] MovieApp
 - [x] Joke Generator
