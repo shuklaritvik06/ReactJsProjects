@@ -9,5 +9,6 @@ Learn and build Projects using Reactjs :)
 - [x] Weather App (PWA)
 - [x] Crypto Tracker
 - [x] Webpack
-- [ ] Snowpack
-- [ ] Esbuild
+- [x] Snowpack
+- [x] Vite
+- [x] Esbuild
