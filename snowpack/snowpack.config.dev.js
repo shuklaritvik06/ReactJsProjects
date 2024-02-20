@@ -7,7 +7,7 @@ module.exports = {
   optimize: {
     bundle: true,
     minify: true,
-    target: "es2018"
+    target: "es2020"
   },
   devOptions: {
     hostname: "localhost",
@@ -17,8 +17,13 @@ module.exports = {
     hmr: true,
     tailwindConfig: "./tailwind.config.js"
   },
+  plugins: [
+    "@snowpack/plugin-react-refresh",
+    "@snowpack/plugin-dotenv",
+    "@snowpack/plugin-postcss"
+  ],
   buildOptions: {
-    out: "./dist",
+    out: "./build",
     clean: true,
     cacheDirPath: "./node_modules/.cache/learncache",
     sourcemap: true

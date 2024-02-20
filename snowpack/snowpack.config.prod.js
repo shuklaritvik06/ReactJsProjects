@@ -7,10 +7,10 @@ module.exports = {
   optimize: {
     bundle: true,
     minify: true,
-    target: "es2018"
+    target: "es2020"
   },
   buildOptions: {
-    out: "./dist",
+    out: "./build",
     clean: true,
     cacheDirPath: "./node_modules/.cache/learncache",
     sourcemap: false

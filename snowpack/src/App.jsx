@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Route, Routes, Link } from "react-router-dom";
 import Hello from "./Hello";
+
 const myWorker = new Worker(new URL("./worker.js", import.meta.url));
 
 function App() {
